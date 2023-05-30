@@ -1,0 +1,12 @@
+{
+    "name": "Phone Case",
+    "description": "Eco Friendly Phone Case",
+    "image": "https://nftsjkjk.infura-ipfs.io/ipfs/QmRoabKTrxWWsedVgS8rqDhjxQikuJAnSzSc2rGCAn7eFX",
+    "id": "3",
+    "attributes": [
+        {
+            "trait_type": "Purchase Price",
+            "value": 10
+        }
+    ]
+}

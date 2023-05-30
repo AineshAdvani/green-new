@@ -1,0 +1,12 @@
+{
+    "name": "Backpack",
+    "description": "Recycled Plastic Backpack",
+    "image": "https://nftsjkjk.infura-ipfs.io/ipfs/QmZcBN9iBnQBKuVRus3yZaptSVojN3xGvmmoJbLp2GZhvn",
+    "id": "1",
+    "attributes": [
+        {
+            "trait_type": "Purchase Price",
+            "value": 20
+        }
+    ]
+}

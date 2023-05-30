@@ -1,0 +1,12 @@
+{
+    "name": "Belt",
+    "description": "Recycled Plastic Belts",
+    "image": "https://nftsjkjk.infura-ipfs.io/ipfs/QmS8Ci38NQXiJt7QPudWHjb6czJmdB9Xto2Svy4UUzfTQJ",
+    "id": "2",
+    "attributes": [
+        {
+            "trait_type": "Purchase Price",
+            "value": 15
+        }
+    ]
+}
