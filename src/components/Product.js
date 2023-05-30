@@ -5,12 +5,10 @@ import close from '../assets/close.svg';
 
 const Product = ({ product, provider, account, greenplanet, togglePop }) => {
     const [hasBought, setHasBought] = useState(false)
-    const [hasLended, setHasLended] = useState(false)
     const [hasInspected, setHasInspected] = useState(false)
     const [hasSold, setHasSold] = useState(false)
 
     const [buyer, setBuyer] = useState(null)
-    const [lender, setLender] = useState(null)
     const [inspector, setInspector] = useState(null)
     const [seller, setSeller] = useState(null)
 
@@ -31,14 +29,6 @@ const Product = ({ product, provider, account, greenplanet, togglePop }) => {
 
         const hasSold = await greenplanet.approval(product.id, seller)
         setHasSold(hasSold)
-
-        // -- Lender
-
-        const lender = await greenplanet.lender()
-        setLender(lender)
-
-        const hasLended = await greenplanet.approval(product.id, lender)
-        setHasLended(hasLended)
 
         // -- Inspector
 
@@ -102,11 +92,6 @@ const Product = ({ product, provider, account, greenplanet, togglePop }) => {
                 </div>
                 <div className="product__overview">
                     <h1>{product.name}</h1>
-                    <p>
-                        <strong>{product.attributes[2].value}</strong> bds |
-                        <strong>{product.attributes[3].value}</strong> ba |
-                        <strong>{product.attributes[4].value}</strong> sqft
-                    </p>
                     <p>{product.address}</p>
                     <h2>{product.attributes[0].value} ETH</h2>
 
@@ -137,14 +122,7 @@ const Product = ({ product, provider, account, greenplanet, togglePop }) => {
                     <hr />
                     <h2>Overview</h2>
                     <p>{product.description}</p>
-                    <hr/>
-                    <h2>Features</h2>
-                    <ul>
-                    {product.attributes.map((attribute, index) => (
-                            <li key={index}><strong>{attribute.trait_type}</strong> : {attribute.value}</li>
-                        ))}
-                    </ul>
-                    
+                    <hr/>                    
                 </div>
             </div>
         
